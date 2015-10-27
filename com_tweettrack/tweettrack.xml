@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="3.4" method="upgrade">
+    <name>com_tweettrack</name>
+    <creationDate>2015-10-19</creationDate>
+    <author>KnowledgeArc Ltd</author>
+    <authorEmail>development@knowledgearc.com</authorEmail>
+    <authorUrl>http://www.knowledgearc.org</authorUrl>
+    <copyright>>Copyright (C) 2015 KnowledgeArc Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.0.0-dev</version>
+    <description>COM_TWEETTRACK_XML_DESCRIPTION</description>
+
+    <scriptfile>script.php</scriptfile>
+
+	<install>
+        <sql/>
+    </install>
+
+    <uninstall>
+        <sql/>
+    </uninstall>
+
+    <update/>
+	
+    <files folder="site">
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>controller.php</filename>
+        <filename>tweettrack.php</filename>
+        <filename>router.php</filename>
+    </files>
+
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_tweettrack.ini</language>
+    </languages>
+
+    <media folder="media" destination="com_tweettrack">
+	<folder>bootstrap</folder>
+        <folder>css</folder>
+		<folder>images</folder>
+        <folder>js</folder>
+    </media>
+
+    <administration>
+			<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_tweettrack' img="class:tweettrack">Tweet Track</menu>
+
+        <files folder="admin">
+			<filename>index.html</filename>
+            <filename>tweettrack.php</filename>
+			<filename>controller.php</filename>
+			<folder>views</folder>
+        </files>
+
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_tweettrack.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_tweettrack.sys.ini</language>
+        </languages>
+    </administration>
+
+    <params>
+    </params>
+</extension>
